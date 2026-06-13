@@ -17,15 +17,15 @@ func Root() *cobra.Command {
 	root := &cobra.Command{
 		Use:   "bri",
 		Short: "Browse Encyclopedia Britannica articles",
-		Long: `Browse Encyclopedia Britannica articles
+		Long: `Browse Encyclopedia Britannica articles from the command line.
 
-This is a fresh scaffold. Add your commands here on top of the britannica
-library package, then wire them into Root with root.AddCommand.`,
+Search the world's leading encyclopedia by keyword and get back article
+titles, URLs, categories, and summaries in text, JSON, or JSONL format.`,
 		SilenceUsage:  true,
 		SilenceErrors: true,
 	}
 
 	root.AddCommand(newVersionCmd())
-	// TODO: root.AddCommand(newGetCmd()), etc.
+	root.AddCommand(newSearchCmd())
 	return root
 }
