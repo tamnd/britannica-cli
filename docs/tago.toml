@@ -1,0 +1,10 @@
+title       = "bri"
+baseURL     = "https://britannica-cli.tamnd.com/"
+description = "Browse Encyclopedia Britannica articles"
+contentDir  = "content"
+outputDir   = "public"
+theme       = "tago-doks"
+syntaxHighlight = "true"
+
+[params]
+github = "https://github.com/tamnd/britannica-cli"
